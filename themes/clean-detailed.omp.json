@@ -55,23 +55,7 @@
     },
     {
       "alignment": "right",
-      "segments": [
-        {
-          "background": "#17D7A0",
-          "foreground": "#011627",
-          "leading_diamond": "\ue0b2",
-          "properties": {
-            "branch_icon": "\ue725 ",
-            "fetch_status": true,
-            "fetch_upstream_icon": true,
-            "fetch_worktree_count": true
-          },
-          "style": "diamond",
-          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
-          "trailing_diamond": "\ue0b0",
-          "type": "git"
-        }
-      ],
+      "segments": [],
       "type": "prompt"
     },
     {
