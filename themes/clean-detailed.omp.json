@@ -56,7 +56,7 @@
           "template": "\ue266 MEM: {{ round .PhysicalPercentUsed .Precision }}% | {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB \ue266 ",
           "trailing_diamond": "\ue0b0",
           "type": "sysinfo"
-        },
+        }
       ],
       "type": "prompt"
     },
