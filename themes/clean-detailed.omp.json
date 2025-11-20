@@ -27,7 +27,6 @@
           "trailing_diamond": "<transparent,#FEF5ED>\ue0b2</>",
           "type": "shell"
         },
-
         {
           "background": "#575656",
           "foreground": "#d6deeb",
@@ -47,24 +46,16 @@
     {
       "alignment": "right",
       "segments": [
+
         {
-          "background": "#516BEB",
-          "foreground": "#ffffff",
-          "leading_diamond": "\ue0b2",
-          "style": "diamond",
-          "template": "\ue266 MEM: {{ round .PhysicalPercentUsed .Precision }}% | {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB \ue266 ",
-          
-          "type": "sysinfo"
-        },
-		{
           "properties": {
-            "time_format": "15:04"
+            "time_format": "15:04:05.000 UTC-07"
           },
-		  "background": "#aaaaaa",
-          "foreground": "#ffffff",
-          "style": "diamond",
+          "foreground": "#516BEB",
+
+          "style": "plain",
           "leading_diamond": "\ue0b2",
-          "template": " {{ .CurrentDate | date .Format }}",
+          "template": " [\uf073 {{ .CurrentDate | date .Format }}]",
           "type": "time"
         }
       ],
@@ -89,9 +80,9 @@
             "folder_icon": "\uf07b",
             "folder_separator_icon": " \uf061 ",
             "home_icon": "\ueb06",
-			"dir_length": 4,
-			"full_length_dirs": 3,
-			"style": "fish"
+            "dir_length": 4,
+            "full_length_dirs": 3,
+            "style": "fish"
           },
           "style": "plain",
           "template": " {{ .Path }} ",
